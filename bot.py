@@ -47,4 +47,9 @@ async def hello(interaction: discord.Interaction):
     bot_latency = round(bot.latency * 1000)
     await interaction.response.send_message("type this '?' in front of any command for personal messaging")
 
+@bot.tree.command(name="/james", description="curious about james then use the command")
+async def hello(interaction: discord.Interaction):
+    bot_latency = round(bot.latency * 1000)
+    await interaction.response.send_message("https://www.youtube.com/@Jmateo2070")
+
 bot.run(TOKEN)
